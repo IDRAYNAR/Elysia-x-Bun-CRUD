@@ -38,19 +38,19 @@ bun start
   ElysiaJS provides a powerful JavaScript framework specifically designed for backend development. It offers a modular and flexible approach, making it easier to manage common tasks such as authentication, database management, HTTP requests, file handling, and more. Additionally, it includes advanced features such as websocket support, event handling, caching, task scheduling, and much more. ElysiaJS is also known for its ease of use and active community, making it easier to share knowledge and troubleshoot issues.
 
 - `@elysiajs/html` ⤵ <br>
-  ElysiaJS HTML is a package that provides a simple and easy to use API for generating HTML documents. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+  "@elysiajs/html" is a backend package or module in the ElysiaJS framework, specifically designed for HTML rendering. It allows developers to render HTML templates and generate dynamic HTML content on the server-side. This package is useful for building web applications or generating HTML emails using the backend code.
 
 - `@elysiajs/swagger` ⤵ <br>
-  ElysiaJS Swagger is a package that provides a simple and easy to use API for generating Swagger documentation. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+  With "@elysiajs/swagger", you can annotate your ElysiaJS routes with Swagger-specific decorators and generate a Swagger specification file. This specification file describes your API endpoints, their input and output data types, and any additional metadata such as authentication requirements, response codes, and more.
 
 - `@elysiajs/cors` ⤵ <br>
-  ElysiaJS CORS is a package that provides a simple and easy to use API for enabling CORS in your ElysiaJS application. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+  The "@elysiajs/cors" package helps developers handle CORS-related issues in their backend applications built with ElysiaJS. It allows for configuring and managing CORS policies, such as specifying which domains are allowed to make requests to the server, handling request headers, and handling response headers. This package ensures secure and controlled access to resources from different domains while maintaining the security of the application.
   
 - `mongoose` ⤵ <br>
-  Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. It provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+  With Mongoose, you can define schemas that specify the structure and validation rules for your data. You can then use these schemas to create, retrieve, update, and delete data in MongoDB. Mongoose also provides a rich set of query methods and options for performing complex queries and aggregations.
 
 - `bun-types` ⤵ <br>
-  Bun Types is a package that provides a set of TypeScript types for the Bun framework. It is designed to be used with Bun, but can also be used as a standalone package.
+  Bun Types is a package that provides a set of TypeScript types for the Bun framework. It is designed to be used with Bun.
 
 <hr>
 
