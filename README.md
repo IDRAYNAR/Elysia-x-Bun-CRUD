@@ -43,6 +43,7 @@ Run SASS :
 - `@elysiajs/html` A package for rendering HTML templates in Elysia.
 - `mongoose` A MongoDB object modeling tool.
 - `bun-types` A package providing type definitions for the Bun framework.
+- `sass` A package for compiling SASS files to CSS.
 
 <hr>
 
