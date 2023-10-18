@@ -34,13 +34,23 @@ bun start
 
 ## Packages
 
-- `Elysia` : A lightweight web framework for TypeScript.
-- `@elysiajs/html` : A package for rendering HTML templates in Elysia.
-- `mongoose` : A MongoDB object modeling tool.
-- `bun-types` : A package providing type definitions for the Bun framework.
-- `html` : A package for rendering HTML templates.
-- `swagger` : A package for generating API documentation.
-- `cors` : A package for enabling CORS in Elysia.
+- `Elysia` : <br>
+  ElysiaJS provides a powerful JavaScript framework specifically designed for backend development. It offers a modular and flexible approach, making it easier to manage common tasks such as authentication, database management, HTTP requests, file handling, and more. Additionally, it includes advanced features such as websocket support, event handling, caching, task scheduling, and much more. ElysiaJS is also known for its ease of use and active community, making it easier to share knowledge and troubleshoot issues.
+
+- `@elysiajs/html` : <br>
+  ElysiaJS HTML is a package that provides a simple and easy to use API for generating HTML documents. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+
+- `@elysiajs/swagger` : <br>
+  ElysiaJS Swagger is a package that provides a simple and easy to use API for generating Swagger documentation. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+
+- `@elysiajs/cors` : <br>
+  ElysiaJS CORS is a package that provides a simple and easy to use API for enabling CORS in your ElysiaJS application. It is designed to be used with ElysiaJS, but can also be used as a standalone package.
+  
+- `mongoose` : <br>
+  Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. It provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
+- `bun-types` : <br>
+  Bun Types is a package that provides a set of TypeScript types for the Bun framework. It is designed to be used with Bun, but can also be used as a standalone package.
 
 <hr>
 
