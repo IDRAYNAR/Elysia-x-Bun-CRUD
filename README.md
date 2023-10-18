@@ -88,6 +88,8 @@ bun start
 bun.lockb
 package.json
 ```
+## Why I organized the files in this way ?
+
 - I put the index.html and script.js files in the public folder because these files are meant to be directly accessed by the browser. The public folder is the designated location for static assets that can be accessed by the client. By placing these files in the 
   public folder, I ensure that they are readily available and can be served by the web server without any additional configuration.
   
