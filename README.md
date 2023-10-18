@@ -15,24 +15,24 @@
 Install dependencies :
 
 ```bash
-> bun install
+bun install
 ```
 
 If something doesn't work proprely, use this command to install the missing dependencies :
 
 ```bash
-> npm install
+npm install
 ```
 
 Production :
 
 ```bash
-> bun start
+bun start
 ```
 
 Run SASS :
 ```bash
-> sass --watch src/sass/style.sass:public/css/style.css
+sass --watch src/sass/style.sass:public/css/style.css
 ```
 
 <hr>
