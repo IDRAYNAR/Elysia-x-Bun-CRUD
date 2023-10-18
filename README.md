@@ -64,7 +64,9 @@ bun start
   
 - `/books` ⤵ <br>
   The books page. It displays a list of all the books from the database in json format.
-  
+
+***
+
 - `/swagger` ⤵ <br>
   The API documentation page. It displays the documentation for all the API endpoints.
 
