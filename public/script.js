@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-    fetch("/books", {
+    fetch("/songs", {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -7,22 +7,22 @@ window.addEventListener("DOMContentLoaded", function () {
 
     })
         .then((res) => res.json())
-        .then((books) => {
-            document.getElementById("bookList").innerHTML = books.map((book) => {
+        .then((songs) => {
+            document.getElementById("songList").innerHTML = songs.map((song) => {
                 return `
-                <li id="${book.id}">
-                    ID: ${book.id} <br> Name: ${book.name} <br> Author: ${book.author}
+                <li id="${song.id}">
+                    ID: ${song.id} <br> Name: ${song.name} <br> Author: ${song.author}
                 </li>
             `
             }).join("");
         })
 }, false);
 
-const addNewBook = () => {
-    const newBook = prompt("Book name & author (separated by a comma)");
-    if (newBook) {
-        const [name, author] = newBook.split(",");
-        fetch("/books", {
+const addNewSong = () => {
+    const newSong = prompt("Song name & author (separated by a comma)");
+    if (newSong) {
+        const [name, author] = newSong.split(",");
+        fetch("/songs", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const addNewBook = () => {
             .then((res) => res.json())
             .then((res) => {
                 if (res.success) {
-                    document.getElementById("bookList").innerHTML += `
+                    document.getElementById("songList").innerHTML += `
                     <li id="${res.id}">
                         ID: ${res.id} Name: ${name} <br> Author: ${author}
                     </li>
@@ -42,32 +42,32 @@ const addNewBook = () => {
     }
 };
 
-const deleteBook = () => {
-    const bookPrompt = prompt("Book ID");
-    if (!bookPrompt) return alert("Invalid book ID");
-    const bookId = parseInt(bookPrompt);
-    if (bookId) {
-        fetch(`/books/${bookId}`, {
+const deleteSong = () => {
+    const songPrompt = prompt("Song ID");
+    if (!songPrompt) return alert("Invalid song ID");
+    const songId = parseInt(songPrompt);
+    if (songId) {
+        fetch(`/songs/${songId}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
             .then((res) => {
                 if (res.success) {
-                    document.getElementById(bookId).remove();
+                    document.getElementById(songId).remove();
                 }
             });
     }
 };
 
-const updateBook = () => {
-    const bookPrompt = prompt("Book ID");
-    if (!bookPrompt) return alert("Invalid book ID");
-    const bookId = parseInt(bookPrompt);
-    if (bookId) {
-        const newBook = prompt("Book name & author (separated by a comma)");
-        if (newBook) {
-            const [name, author] = newBook.split(",");
-            fetch(`/books/${bookId}`, {
+const updateSong = () => {
+    const songPrompt = prompt("Song ID");
+    if (!songPrompt) return alert("Invalid song ID");
+    const songId = parseInt(songPrompt);
+    if (songId) {
+        const newSong = prompt("Song name & author (separated by a comma)");
+        if (newSong) {
+            const [name, author] = newSong.split(",");
+            fetch(`/songs/${songId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -77,8 +77,8 @@ const updateBook = () => {
                 .then((res) => res.json())
                 .then((res) => {
                     if (res.success) {
-                        document.getElementById(bookId).innerHTML = `
-                        ID: ${bookId} <br> Name: ${name} <br> Author: ${author}
+                        document.getElementById(songId).innerHTML = `
+                        ID: ${songId} <br> Name: ${name} <br> Author: ${author}
                     `
                     }
                 });
