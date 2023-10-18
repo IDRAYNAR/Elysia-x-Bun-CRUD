@@ -88,3 +88,13 @@ bun start
 bun.lockb
 package.json
 ```
+- I put the index.html and script.js files in the public folder because these files are meant to be directly accessed by the browser.   
+  The public folder is the designated location for static assets that can be accessed by the client. By placing these files in the 
+  public folder, I ensure that they are readily available and can be served by the web server without any additional configuration.
+  
+  On the other hand, I placed the db.ts and index.ts files in the src folder. The src folder is typically used for source code files that need to be compiled or processed before they can be used by the browser. In this case, db.ts and index.ts are TypeScript files that need to be transpiled into JavaScript before they can be executed in the browser.
+  
+  By separating the source code files in the src folder, I can take advantage of build tools such as webpack or TypeScript compiler to compile and bundle these files into a single JavaScript file that can be included in the index.html file. This not only improves the performance of the application by reducing the number of HTTP requests but also allows me to leverage the features provided by TypeScript, such as static typing and advanced language features.
+  
+- In summary, by organizing the index.html and script.js files in the public folder and the db.ts and index.ts files in the src folder,
+  I ensure that the necessary files are appropriately placed for direct access by the browser and for compilation and processing as part of the development workflow.
