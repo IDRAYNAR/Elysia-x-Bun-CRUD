@@ -38,6 +38,9 @@ bun start
 - `@elysiajs/html` A package for rendering HTML templates in Elysia.
 - `mongoose` A MongoDB object modeling tool.
 - `bun-types` A package providing type definitions for the Bun framework.
+- `html` A package for rendering HTML templates.
+- `swagger` A package for generating API documentation.
+- `cors` A package for enabling CORS in Elysia.
 
 <hr>
 
