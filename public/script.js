@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
             document.getElementById("songList").innerHTML = songs.map((song) => {
                 return `
                 <li id="${song.id}">
-                    ID: ${song.id} <br> Name: ${song.name} <br> Author: ${song.author}
+                    <b>ID: ${song.id}</b> <br> Name :  <b> ${song.name} </b> <br> Author :  <b> ${song.author} </b>
                 </li>
             `
             }).join("");
@@ -34,7 +34,7 @@ const addNewSong = () => {
                 if (res.success) {
                     document.getElementById("songList").innerHTML += `
                     <li id="${res.id}">
-                        ID: ${res.id} Name: ${name} <br> Author: ${author}
+                        <b>ID: ${res.id}</b> <br> Name :  <b> ${name} </b> <br> Author :  <b> ${author} </b>
                     </li>
                 `
                 }
@@ -78,7 +78,7 @@ const updateSong = () => {
                 .then((res) => {
                     if (res.success) {
                         document.getElementById(songId).innerHTML = `
-                        ID: ${songId} <br> Name: ${name} <br> Author: ${author}
+                            <b>ID: ${songId}</b> <br> Name :  <b> ${name} </b> <br> Author :  <b> ${author} </b>
                     `
                     }
                 });

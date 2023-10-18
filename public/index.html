@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Songstore</title>
-        <script src="./script.js"></script>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <h1>My Songstore</h1>
-        <button onclick="addNewSong()" type="button">Add Song</button>
-        <button onclick="deleteSong()" type="button">Remove Song</button>
-        <button onclick="updateSong()" type="button">Update Song</button>
-        <ul id="songList"></ul>
-        <a href="/swagger" target="_blank">API Documentation</a>
-    </body>
+
+<head>
+    <title>My Song Playlist</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<style>
+    * {
+        font-family: Montserrat, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        text-align: center;
+        color: #666666;
+    }
+
+    button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #3e8e41;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 1rem;
+        border-top: 1px solid lightgray;
+        background-color: #ffffff;
+        color: #666666;
+    }
+
+    .apiInfo {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #666666;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: #4caf50;
+    }
+</style>
+
+<body>
+    <h1>My Song Playlist</h1>
+    <button onclick="addNewSong()" type="button">Add Song</button>
+    <button onclick="deleteSong()" type="button">Remove Song</button>
+    <button onclick="updateSong()" type="button">Update Song</button>
+    <ul id="songList"></ul>
+    <div class="apiInfo">
+        <a href="/swagger" target="_blank">API Documentation →</a>
+    </div>
+</body>
+
 </html>

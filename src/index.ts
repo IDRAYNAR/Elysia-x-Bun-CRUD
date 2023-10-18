@@ -42,7 +42,6 @@ new Elysia()
                             schema: {
                                 type: "object",
                                 properties: {
-                                    //id is auto generated
                                     name: {
                                         type: "string",
                                         description: "Name of the song",

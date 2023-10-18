@@ -6,7 +6,7 @@
   The backend is written in TypeScript and uses the Elysia framework. It consists of a single entry point file src/index.ts which sets up the Elysia server and defines the routes and handlers for various endpoints. The server listens on port 3000.
 
 - <b>Frontend</b> ⤵ <br>
-  The frontend consists of an HTML file public/index.html and a JavaScript file public/script.js. The HTML file contains the basic structure of the songstore webpage, while the JavaScript file handles fetching data from the backend API and updating the UI dynamically.
+  The frontend consists of an HTML file public/index.html and a JavaScript file public/script.js. The HTML file contains the basic structure of the Song Playlist webpage, while the JavaScript file handles fetching data from the backend API and updating the UI dynamically.
 
 - <b>Database</b> ⤵ <br>
   The project uses a SQLite database to store song information. The database is initialized and accessed using the SongsDatabase class defined in src/db.ts. The database is located at database/songs.db (bun:sqlite).
@@ -62,7 +62,7 @@ bun start
 - (The default port is 3000 : http://localhost:3000/)
 
 - `http://localhost:3000/` ⤵ <br>
-  The home page of the songstore. It displays a list of all the songs in the database.
+  The home page of the Song Playlist. It displays a list of all the songs in the database.
   
 - `http://localhost:3000/songs` ⤵ <br>
   The songs page. It displays a list of all the songs from the database in json format.
