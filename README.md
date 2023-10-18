@@ -59,13 +59,15 @@ bun start
 
 ## Pages
 
-- `/` ⤵ <br>
+- (The default port is 3000 : http://localhost:3000/)
+
+- `http://localhost:3000/` ⤵ <br>
   The home page of the bookstore. It displays a list of all the books in the database.
   
-- `/books` ⤵ <br>
+- `http://localhost:3000/books` ⤵ <br>
   The books page. It displays a list of all the books from the database in json format.
 
-- `/swagger` ⤵ <br>
+- `http://localhost:3000/swagger` ⤵ <br>
   The API documentation page. It displays the documentation for all the API endpoints.
 
 <hr>
