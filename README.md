@@ -34,13 +34,21 @@ bun start
 
 ## Packages
 
-- `Elysia` A lightweight web framework for TypeScript.
-- `@elysiajs/html` A package for rendering HTML templates in Elysia.
-- `mongoose` A MongoDB object modeling tool.
-- `bun-types` A package providing type definitions for the Bun framework.
-- `html` A package for rendering HTML templates.
-- `swagger` A package for generating API documentation.
-- `cors` A package for enabling CORS in Elysia.
+- `Elysia` : A lightweight web framework for TypeScript.
+- `@elysiajs/html` : A package for rendering HTML templates in Elysia.
+- `mongoose` : A MongoDB object modeling tool.
+- `bun-types` : A package providing type definitions for the Bun framework.
+- `html` : A package for rendering HTML templates.
+- `swagger` : A package for generating API documentation.
+- `cors` : A package for enabling CORS in Elysia.
+
+<hr>
+
+## Pages
+
+- `/` : The home page of the bookstore. It displays a list of all the books in the database.
+- `/books` : The books page. It displays a list of all the books from the database in json format.
+- `/swagger` : The API documentation page. It displays the documentation for all the API endpoints.
 
 <hr>
 
