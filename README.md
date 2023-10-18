@@ -49,14 +49,9 @@ bun start
 📁 database
 |__ books.db
 📁 public
-├── css
-|    ├── style.css
-|    |__ style.css.map
 ├── index.html
 |__ script.js
 📁 src
-├── sass
-|    |__ style.sass
 ├── db.ts
 |__ index.ts
 .env
