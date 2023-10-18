@@ -8,6 +8,7 @@ new Elysia()
     .get("/", () => Bun.file("./public/index.html").text())
     .get("/script.js", () => Bun.file("./public/script.js").text())
     .get("/books", ({ db }) => db.getBooks())
+
     .post(
         "/books",
         async ({ db, body }) => {
