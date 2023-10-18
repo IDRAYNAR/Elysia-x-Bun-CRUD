@@ -85,7 +85,6 @@ bun start
 📁 src
 ├── db.ts
 |__ index.ts
-.env
 bun.lockb
 package.json
 ```
