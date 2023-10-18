@@ -32,7 +32,7 @@ Production :
 
 Run SASS :
 ```bash
-> sass --watch src//sass/style.sass:public//css/style.css
+> sass --watch src/sass/style.sass:public/css/style.css
 ```
 
 <hr>
