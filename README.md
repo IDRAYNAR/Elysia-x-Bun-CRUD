@@ -18,6 +18,12 @@ Install dependencies :
 > bun install
 ```
 
+If something doesn't work proprely, use this command to install the missing dependencies :
+
+```bash
+> npm install
+```
+
 Production :
 
 ```bash
