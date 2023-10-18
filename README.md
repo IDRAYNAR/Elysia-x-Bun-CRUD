@@ -30,6 +30,11 @@ Production :
 > bun start
 ```
 
+Run SASS :
+```bash
+> sass --watch src//sass/style.sass:public//css/style.css
+```
+
 <hr>
 
 ## Packages
